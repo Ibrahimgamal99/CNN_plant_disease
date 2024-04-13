@@ -1,9 +1,9 @@
-import os
 import numpy as np
 from keras.models import load_model
 from flask import Flask, request, jsonify
 from io import BytesIO
-from tensorflow.keras.preprocessing import image
+from tensorflow import keras
+from keras.preprocessing import image
 
 class_labels = [
     'Apple___Apple_scab','Apple___Black_rot','Apple___Cedar_apple_rust','Apple___healthy','Blueberry___healthy',
